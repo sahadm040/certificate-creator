@@ -83,14 +83,14 @@ function CreateStudentCourse() {
               marginTop: "20px",
             }}
           >
-            CREATE SUDENT COURSE
+            CREATE STUDENT COURSE
           </h5>
           <Row>
             <Col md="7">
               <Card>
                 <Container>
                   <Form onSubmit={HandleCreate}>
-                    <h4>CREATE SUDENT COURSE</h4>
+                    <h4>CREATE STUDENT COURSE</h4>
                     <Row>
                       <Col md="6">
                         <Label>Student name</Label>
