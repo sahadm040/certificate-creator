@@ -18,7 +18,7 @@ function UpdaeStudent() {
 
   useEffect(() => {
     dispatch(singleViewApi(catId));
-  }, [dispatch]);
+  }, [dispatch,catId]);
 
   useEffect(() => {
     setState(studentDetails);

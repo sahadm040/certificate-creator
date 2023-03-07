@@ -1,5 +1,3 @@
-import { fromPairs } from "lodash";
-
 export { default as picwish } from "./picwish.png";
 export { default as cerback } from "./cerback.png";
 export { default as cdesig } from "./cdesig.png";

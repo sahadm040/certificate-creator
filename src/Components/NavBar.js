@@ -11,10 +11,8 @@ import { logoutApi } from "../Store/Login/useApi";
 function NavBar() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { loginDetails, error, loading } = useSelector((state) => ({
+  const { loginDetails } = useSelector((state) => ({
     userDetails: state.LoginReducer.userDetails,
-    error: state.LoginReducer.error,
-    loading: state.LoginReducer.loading,
   }));
   console.log(loginDetails);
   console.log(loginDetails);

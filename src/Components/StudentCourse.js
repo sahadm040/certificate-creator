@@ -2,7 +2,7 @@ import { map, range } from "lodash";
 import React, { useEffect, useState } from "react";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   Badge,
   Button,
@@ -95,7 +95,7 @@ function Studentcourse() {
                     <tbody>
                       {map(studentCourseDetails.results, (item) => (
                         <tr>
-                          <td scope="row">{item.student_name}</td>
+                          <td >{item.student_name}</td>
                           <td>{item.course_name}</td>
                           <td>{item.progress}</td>
                           <td>

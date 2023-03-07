@@ -1,12 +1,8 @@
 import React, { useEffect } from "react";
-import ProgressBar from "react-bootstrap/ProgressBar";
-import { Button, Col, Container, Row } from "reactstrap";
-import { picwish } from "./images";
-import { cerback } from "./images";
+import { Button, Container } from "reactstrap";
 import { cdesig } from "./images";
 import { edisonvalleylogo } from "./images";
 import { osperb } from "./images";
-import { Edisonvalleybulb } from "./images";
 import { Edisonvalleybulbb } from "./images";
 import { Xanthrone } from "./images";
 import { eceal } from "./images";
@@ -16,13 +12,11 @@ import { singleViewApi } from "../Store/student/useApi";
 import { useDispatch, useSelector } from "react-redux";
 import { map } from "lodash";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import nasif from "../Components/images/nasif.png";
 
 
 const Certificate = () => {
   const params = useParams();
   const dispatch = useDispatch();
-  const now = 40;
   const { studentDetails } = useSelector((state) => ({
     studentDetails: state.StudentsReducer.student,
   }));
@@ -63,7 +57,7 @@ const Certificate = () => {
       // style={{ backgroundImage: `url(${Edisonvalleybulb})`, backgroundSize: 'contain', }}
     >
       <div className="m-2">
-        <img src={cdesig} width="100%" height="120px " />
+        <img src={cdesig} width="100%" height="120px " alt={""}/>
       </div>
       {/* <Container> */}
       <div>
@@ -169,7 +163,7 @@ const Certificate = () => {
               for your future endeavors.
             </h3>
             <div className="my-3">
-              <img src={eceal} />
+              <img src={eceal} alt={""}/>
             </div>
             <div>
               <h3
@@ -191,14 +185,15 @@ const Certificate = () => {
             <img
               style={{ width: "140px", height: "70px" }}
               src={edisonvalleylogo}
+              alt={""}
             />
-            <img style={{ width: "150px", height: "30px" }} src={Xanthrone} />
-            <img style={{ width: "120px", height: "30px" }} src={osperb} />
+            <img style={{ width: "150px", height: "30px" }} src={Xanthrone} alt={""} />
+            <img style={{ width: "120px", height: "30px" }} src={osperb} alt={""}/>
           </div>
           {/* <div className="d-flex">
-              <img src={edisonvalleylogo} />
-              <img src={Xanthrone} />
-              <img src={osperb} />
+              <img src={edisonvalleylogo} alt={""}/>
+              <img src={Xanthrone} alt={""}/>
+              <img src={osperb} alt={""}/>
             </div> */}
           <div
             className="d-flex align-items-center m-4"
@@ -206,12 +201,13 @@ const Certificate = () => {
             // style={{backgroundImage: `url(${Edisonvalleybulb})`, backgroundSize: 'contain', flexDirection: "column" ,backgroundRepeat:"no-repeat" ,position:"relative" }}
             // style={{ backgroundImage: `url(${Edisonvalleybulb})`, backgroundSize: 'contain', }}
           >
-            {/* <img src={Edisonvalleybulb} width="800px" height="800px" style={{position:"absolute",opacity:"0.2",top:"200px"}} /> */}
+            {/* <img src={Edisonvalleybulb} width="800px" height="800px" style={{position:"absolute",opacity:"0.2",top:"200px"}} alt={""}  /> */}
             <img
               src={Edisonvalleybulbb}
               width="800px"
               height="800px"
               style={{ position: "absolute", opacity: "0.1", top: "200px" }}
+              alt={""}
             />
             <h1
               style={{
@@ -282,7 +278,7 @@ const Certificate = () => {
           </div>
         </Container>
         {/* <div className="m-2">
-          <img src={cdesig} width="100%" height="120px " />
+          <img src={cdesig} width="100%" height="120px alt={""} " />
         </div> */}
       </div>
       {/* </Container> */}

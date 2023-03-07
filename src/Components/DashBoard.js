@@ -6,18 +6,15 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { profileApi } from "../Store/Login/useApi";
 function DashBoard() {
-
   const dispatch = useDispatch();
-  const {loginDetails,loading}= useSelector ((state)=>({
+  const { loginDetails } = useSelector((state) => ({
     loginDetails: state.LoginReducer.loginDetails,
-    loading: state.LoginReducer.loading
-  }))
+  }));
 
   useEffect(() => {
-    dispatch(profileApi())
-  }, [dispatch])
+    dispatch(profileApi());
+  }, [dispatch]);
 
-  
   return (
     <div style={{ backgroundColor: "#F8F8FB" }}>
       <Layout>
@@ -57,10 +54,22 @@ function DashBoard() {
                         ></img>
                       </div>
                       <div className="mt-5 mx-2">
-                        <h5 style={{ fontSize: "15px", fontWeight: "500px" ,color:"red" }}>
+                        <h5
+                          style={{
+                            fontSize: "15px",
+                            fontWeight: "500px",
+                            color: "red",
+                          }}
+                        >
                           {loginDetails?.username}
                         </h5>
-                        <h5 style={{ fontSize: "13px", fontWeight: "400px", color:"blue" }}>
+                        <h5
+                          style={{
+                            fontSize: "13px",
+                            fontWeight: "400px",
+                            color: "blue",
+                          }}
+                        >
                           {loginDetails?.email}
                         </h5>
                       </div>
